@@ -1,4 +1,3 @@
-//import 'package:apps/db/reg.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -127,9 +126,9 @@ class _HomePageState extends State<HomePage> {
                                     padding: const EdgeInsets.all(18.0),
                                     child: Column(
                                       mainAxisAlignment:
-                                      MainAxisAlignment.center,
+                                          MainAxisAlignment.center,
                                       crossAxisAlignment:
-                                      CrossAxisAlignment.start,
+                                          CrossAxisAlignment.start,
                                       children: [
                                         const Text(
                                           'Cómo te sientes el día de hoy?',
@@ -142,18 +141,17 @@ class _HomePageState extends State<HomePage> {
                                           height: 12.0,
                                         ),
                                         ElevatedButton(
-                                          onPressed: () =>
-                                              paginaWeb(
-                                                  dominio: 'docs.google.com',
-                                                  ruta:
+                                          onPressed: () => paginaWeb(
+                                              dominio: 'docs.google.com',
+                                              ruta:
                                                   '/forms/d/e/1FAIpQLSdBmn1SuRBxxbyXLw03Ku2FqcIKc2VG91qSR3XCBqAPKYPE4Q/formResponse'),
                                           style: ElevatedButton.styleFrom(
                                             shape:
-                                            const RoundedRectangleBorder(),
+                                                const RoundedRectangleBorder(),
                                             minimumSize:
-                                            const Size.fromHeight(43),
+                                                const Size.fromHeight(43),
                                             backgroundColor:
-                                            const Color(0xff6577DC),
+                                                const Color(0xff6577DC),
                                             foregroundColor: Colors.white,
                                           ),
                                           child: const Text(
@@ -195,12 +193,12 @@ class _HomePageState extends State<HomePage> {
                                             ),
                                             child: ListTile(
                                               contentPadding:
-                                              const EdgeInsets.symmetric(
-                                                  horizontal: 10),
+                                                  const EdgeInsets.symmetric(
+                                                      horizontal: 10),
                                               minTileHeight: 110,
                                               visualDensity:
-                                              const VisualDensity(
-                                                  vertical: 4.0),
+                                                  const VisualDensity(
+                                                      vertical: 4.0),
                                               title: const Text(
                                                 'Todo lo que debes saber del',
                                                 style: TextStyle(height: 1),
@@ -209,17 +207,17 @@ class _HomePageState extends State<HomePage> {
                                                   'Aedes aegypti',
                                                   textHeightBehavior: TextHeightBehavior(
                                                       applyHeightToLastDescent:
-                                                      true,
+                                                          true,
                                                       applyHeightToFirstAscent:
-                                                      false,
+                                                          false,
                                                       leadingDistribution:
-                                                      TextLeadingDistribution
-                                                          .proportional),
+                                                          TextLeadingDistribution
+                                                              .proportional),
                                                   style: TextStyle(
                                                       height: 0.8,
                                                       fontSize: 25,
                                                       fontWeight:
-                                                      FontWeight.w900,
+                                                          FontWeight.w900,
                                                       fontFamily: 'Futura')),
                                               trailing: Image.asset(
                                                 'assets/aedesAegypti.png',
@@ -275,12 +273,12 @@ class _HomePageState extends State<HomePage> {
                                             ),
                                             child: ListTile(
                                               contentPadding:
-                                              const EdgeInsets.symmetric(
-                                                  horizontal: 10),
+                                                  const EdgeInsets.symmetric(
+                                                      horizontal: 10),
                                               minTileHeight: 110,
                                               visualDensity:
-                                              const VisualDensity(
-                                                  vertical: 4.0),
+                                                  const VisualDensity(
+                                                      vertical: 4.0),
                                               title: const Text(
                                                 'Enfermedades transmitidas',
                                                 style: TextStyle(height: 1),
@@ -289,29 +287,28 @@ class _HomePageState extends State<HomePage> {
                                                   'por vectores',
                                                   textHeightBehavior: TextHeightBehavior(
                                                       applyHeightToLastDescent:
-                                                      true,
+                                                          true,
                                                       applyHeightToFirstAscent:
-                                                      false,
+                                                          false,
                                                       leadingDistribution:
-                                                      TextLeadingDistribution
-                                                          .proportional),
+                                                          TextLeadingDistribution
+                                                              .proportional),
                                                   style: TextStyle(
-                                                    //color: Colors.white,
+                                                      //color: Colors.white,
                                                       height: 0.8,
                                                       fontSize: 25,
                                                       fontWeight:
-                                                      FontWeight.w900,
+                                                          FontWeight.w900,
                                                       fontFamily: 'Futura')),
                                               leading: Image.asset(
                                                 'assets/triatominos.png',
                                                 //fit: BoxFit.fitWidth,
                                                 width: 100,
                                               ),
-                                              onTap: () =>
-                                                  paginaWeb(
-                                                      dominio:
+                                              onTap: () => paginaWeb(
+                                                  dominio:
                                                       'prevencion-activa.involve.me',
-                                                      ruta: '/prevencion-activa'),
+                                                  ruta: '/prevencion-activa'),
                                             ),
                                           ),
                                         ),
@@ -347,9 +344,9 @@ class _HomePageState extends State<HomePage> {
                                               minTileHeight: 100,
                                               minVerticalPadding: 15,
                                               visualDensity:
-                                              const VisualDensity(
-                                                  vertical: 4.0,
-                                                  horizontal: 4.0),
+                                                  const VisualDensity(
+                                                      vertical: 4.0,
+                                                      horizontal: 4.0),
                                               subtitle: const Text(
                                                 'Mapa epidemiológico',
                                                 style: TextStyle(
@@ -364,11 +361,10 @@ class _HomePageState extends State<HomePage> {
                                                 color: Colors.tealAccent,
                                                 size: 20,
                                               ),
-                                              onTap: () =>
-                                                  paginaWeb(
-                                                      dominio:
+                                              onTap: () => paginaWeb(
+                                                  dominio:
                                                       'portalsivigila.ins.gov.co',
-                                                      ruta: ''),
+                                                  ruta: ''),
                                             ),
                                           ),
                                         ),
@@ -392,7 +388,7 @@ class _HomePageState extends State<HomePage> {
                                           children: [
                                             FloatingActionButton.large(
                                               backgroundColor:
-                                              const Color(0xffF3CFCF),
+                                                  const Color(0xffF3CFCF),
                                               child: Image.asset(
                                                 'assets/nutricionista.png',
                                                 //scale: 6,
@@ -446,11 +442,6 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-
-
-
-
-
 
 // BOTON Aedes
 class Aedes extends StatelessWidget {
