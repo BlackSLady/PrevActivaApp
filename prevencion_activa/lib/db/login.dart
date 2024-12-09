@@ -97,8 +97,6 @@ class _HomeState extends State<Home> {
                               //email.clear();
                               return 'Correo no válido';
                             }
-
-
                             return null;
                           },
                         ),
